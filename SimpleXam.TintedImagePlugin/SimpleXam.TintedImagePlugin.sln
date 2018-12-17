@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SimpleXam.TintedImagePlugin.Shared", "SimpleXam.TintedImagePlugin.Shared\SimpleXam.TintedImagePlugin.Shared.shproj", "{E7B46730-7C81-495D-9753-1F3ED57BF96F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleXam.TintedImagePlugin.iOS", "SimpleXam.TintedImagePlugin.iOS\SimpleXam.TintedImagePlugin.iOS.csproj", "{E31FC933-13AE-4AD5-A8F0-6080A558AE72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleXam.TintedImagePlugin.Android", "SimpleXam.TintedImagePlugin.Android\SimpleXam.TintedImagePlugin.Android.csproj", "{4583A8E4-804B-4240-91C2-5A87A9688D5B}"
+EndProject
+Project("{5DD5E4FA-CB73-4610-85AB-557B54E96AA9}") = "SimpleXam.TintedImagePlugin.NuGet", "SimpleXam.TintedImagePlugin.NuGet\SimpleXam.TintedImagePlugin.NuGet.nuproj", "{06E3AC49-859D-4368-AB61-260961711A75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E31FC933-13AE-4AD5-A8F0-6080A558AE72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E31FC933-13AE-4AD5-A8F0-6080A558AE72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E31FC933-13AE-4AD5-A8F0-6080A558AE72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E31FC933-13AE-4AD5-A8F0-6080A558AE72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4583A8E4-804B-4240-91C2-5A87A9688D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4583A8E4-804B-4240-91C2-5A87A9688D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4583A8E4-804B-4240-91C2-5A87A9688D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4583A8E4-804B-4240-91C2-5A87A9688D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06E3AC49-859D-4368-AB61-260961711A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06E3AC49-859D-4368-AB61-260961711A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06E3AC49-859D-4368-AB61-260961711A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06E3AC49-859D-4368-AB61-260961711A75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

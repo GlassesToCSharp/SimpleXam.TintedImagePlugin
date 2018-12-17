@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06E3AC49-859D-4368-AB61-260961711A75}</ProjectGuid>
+    <Description>SimpleXam.TintedImagePlugin</Description>
+    <PackageId>SimpleXam.TintedImagePlugin</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>thomasbartleet</Authors>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SimpleXam.TintedImagePlugin</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>SimpleXam.TintedImagePlugin.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleXam.TintedImagePlugin.Android\SimpleXam.TintedImagePlugin.Android.csproj">
+      <Project>{4583A8E4-804B-4240-91C2-5A87A9688D5B}</Project>
+      <Name>SimpleXam.TintedImagePlugin.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleXam.TintedImagePlugin.iOS\SimpleXam.TintedImagePlugin.iOS.csproj">
+      <Project>{E31FC933-13AE-4AD5-A8F0-6080A558AE72}</Project>
+      <Name>SimpleXam.TintedImagePlugin.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.2</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms">
+      <Version>3.4.0.1008975</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>
